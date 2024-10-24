@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add credits</title>
+    <link rel="stylesheet" href="gift.css">
+</head>
+<body>
+    <header>
+        <a href="index.html"><div class="logo">@Lunaclark</div></a>
+    </header>
+    <div class="main-container">
+    <div class="container">
+        <!--Begining of navbar-->
+    <nav>
+        <div class="menu-btn">
+            <button onclick="toggleSide()"><img src="icons8-menu-30 (1).png" alt=""></button>
+        </div>
+        <div class="nav-content">
+            <a href="email.html"><div class="img-navigate">
+            <img class="img-nav" src="icons8-message-50.png" alt="message-icon">
+            <div class="text-navigate">Messaging</div>
+        </div></a>
+        <a href="gift.html"><div class="img-navigate add-credit">
+            <img class="img-nav-2" src="icons8-book-100.png" alt="message-icon">
+            <div class="text-navigate add-credit">Add credits</div>
+        </div></a>
+        <a href="skypeshow.html"><div class="img-navigate">
+            <img class="img-nav-3" src="icons8-shower-64.png" alt="message-icon">
+            <div class="text-navigate">skype show</div>
+        </div></a>
+        <a href="index2.html"><div class="img-navigate">
+            <img class="img-nav-4" src="icons8-phone-100.png" alt="message-icon">
+            <div class="text-navigate">Telephone</div>
+        </div></a>
+        </div>
+    </nav>
+    <!--Begining of sidebar-->
+    <aside id="sidebar">
+        <div class="side-content">
+            <img class="img-edit" src="20240830_003247.jpg" alt="">
+           <div class="side-content-page">
+            <a href="index.html"><div class="home-icon">
+                <img src="icons8-home-50.png" alt="Home Icon">
+                Go home
+              </div></a>
+              <div class="home-icon">Free registration</div> 
+              <a href="gift.html"><div class="home-icon">Add credits</div></a>
+              <a href="skypeshow.html"><div class="arrow-icon">
+                <img src="icons8-arrow-right-30.png" alt="Home Icon">
+                My webcam
+              </div></a>
+              <a href="#"><div class="arrow-icon">
+                <img src="icons8-arrow-right-30.png" alt="Home Icon">
+                My shop
+              </div></a>
+              <a href="index2.html"><div class="arrow-icon">
+                <img src="icons8-arrow-right-30.png" alt="Home Icon">
+                My phone
+              </div></a>           
+           </div>
+        </div>
+    </aside>
+    <!--Beginning of main-content-->
+    <main>
+      <div class="grid-container"></div>
+      <div class="call">Add credits</div>
+      <div class="offer">
+        <ul>
+          <li>Full access to all contents</li>
+          <li>Access to my email</li>
+          <li>Cam show booking</li>
+          <li>Telephone reservation</li>
+          <li>Purchase of content</li>
+        </ul>
+      </div>
+        <div class="grid-2">
+          <div class="radio-container">
+            <input type="radio" id="bitcoin-button" name="yes-no" value="10 minutes: $25">
+            <label for="bitcoin-button">Bitcoin</label>
+          </div>          
+      <div class="radio-container-2">
+        <input onclick="toggleSidebar()" type="radio" id="paypal-button" name="yes-no" value="20 minutes: $40">
+        <label for="paypal-button">Paypal</label>
+      </div>
+      
+    </div>
+      <div class="information">
+        <input type="text" id="inputField" placeholder="Information: " min="11" max="12" required>
+      </div>
+      <div id="error-message" class="error-message" style="display:none;">
+        <img class="error-message-icon" src="icons8-error-30.png" alt="error-icon">
+        <p><span id="error-message-text"></span></p>
+      </div>
+      
+      <div class="note">
+        <p><span>Note:</span> You can't deposit below 100$</p>
+      </div>
+      <section class="book">
+        <a href="bitcoin.html">
+          <input id="add-credit-button" onclick="toggleSidebar()" type="submit" value="Add credit!" name="book" class="booknow" disabled>
+        </a>
+      </section>            
+    <section class="border"></section>
+    <div class="call-me">Send Gifts instead</div>
+    <div class="paragraph">"Surprise your favorite model with an e-gift card"
+      <p>We appreciate fans (users) like you who is willing to gift, or support model! We have made it so easy for you, that we partenered with <span>amazon.com</span> for easy and quick delivery.
+      </p>
+    </div>
+    <div class="schedule">
+      <select id="schedule" name="schedule">
+        <option class="target" value="schedule">Choose dominations</option>
+        <option class="target" value="morning">10$ - 50$</option>
+        <option class="target" value="noon">100$ - 200$</option>
+        <option class="target" value="afternoon"> 500$ - 1000$</option>
+        <option class="target" value="afternoon"> 2000$ - 5000$</option>
+        <option class="target" value="afternoon"> Others</option>
+      </select>
+    </div>
+    <div class="note">
+    <p><span>Note:</span> Make sure the minimum and maximum amount you are gifting is between the dominations you picked above.</p>
+  </div>
+  <div class="send">
+    <h3>How to Send:</h3>
+    <ol>
+      <li>Visit the amazon link below.</li>
+      <li>Enter the recipient's email address.</li>
+      <span class="gmail"><button>Copy mail ></button>lunacleo9121@gmail.com</span>   
+      <li>Choose the gift card amount.</li>
+      <li>Write a personalized message (optional).</li>
+      <li>Click "Send Gift" to complete the transaction.</li>
+    </ol>
+    <h3>Additional Messages:</h3>
+    <div class="textArea">
+    <textarea id="appreciation-message" placeholder="Write a message..."></textarea>
+  </div>
+  </div>
+  <div class="amazon">
+    <a href="https://www.amazon.com/s?k=amazon+gift+code+redeem&adgrpid=163697945494&hvadid=706320502762&hvdev=c&hvlocphy=9076645&hvnetw=g&hvqmt=b&hvrand=16333741801684240628&hvtargid=kwd-313915909599&hydadcr=14391_13564107&tag=hydglogoo-20&ref=pd_sl_75loo7h52y_b" target="_blank"><button>Amazon.com</button></a>
+  </div>
+      </div>
+    </div>
+    </main>
+    <footer>    
+      <div class="foot">
+        <p>&copy; 2023 <span>Lunaclarkofficial.</span> All rights reserved.</p>
+      </div></footer>
+</div>
+</div>
+<script src="app3.js"></script>
+</body>
+</html>

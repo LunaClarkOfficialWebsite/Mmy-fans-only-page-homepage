@@ -1,0 +1,289 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+    color: white;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+header img {
+    position: relative;
+    height: 150px;
+    width: 200px;
+    background-position: center;
+    background-size: cover;
+}
+
+.post-img img {
+    border: 1px solid white;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 90px;
+}
+
+.first-paragraph {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.first-paragraph img {
+    width: 20px;
+    position: absolute;
+    padding-left: 5px;
+}
+
+.adult-site {
+    color: rgb(241, 7, 7);
+    font-size: 0.89em;
+    line-height: 0px;
+}
+
+.img-vid-count {
+    display: flex;
+  }
+  
+  .icon-container {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+  }
+  
+  .icon-container img {
+    height: 24px;
+    width: 24px;
+    margin-right: 5px;
+  }
+  
+  .icon-container p {
+    font-size: 12px;
+    margin: 0;
+  }
+
+  a input {
+    margin-top: 10px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: 1px solid white;
+    background-color: rgb(41, 101, 192);
+    color: white;
+    font-size: 11px;
+  }
+
+  .second-paragraph p {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.80em;
+  }
+
+  .second-paragraph {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .second-paragraph button {
+    width: 80px;
+    border: none;
+    background-color: transparent;
+    color: white;
+    text-decoration: underline;
+  }
+
+  .video-per-week {
+    display: none;
+  }
+
+  .show {
+    display: block;
+  }
+
+  .content {
+    width: 100%;
+  }
+
+  .post-media {
+    display: flex;
+    justify-content: space-around;
+    border-top: 2px solid white;
+    border-left: 2px solid white;
+    border-right: 2px solid white;
+    margin-top: 20px;
+  }
+
+  .post-count {
+    display: flex;
+    align-items: center;
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-size: 0.6em;
+    border-bottom: 2px solid blue;
+  }
+
+  .post-count span {
+    padding-left: 10px;
+  }
+
+  .post-media img {
+    width: 25px;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 300px);
+    gap: 15px;
+    justify-content: center;
+  }
+
+  .grid-image img {
+    margin-top: 50px;
+    border-radius: 5px;
+    width: 100%; /* Resize image to fit container */ 
+    object-fit: contain; /* Maintain aspect ratio */
+  }
+  
+  .video-grid video {
+    border-radius: 5px;
+    width: 100%;
+    object-fit: contain;
+  }
+
+  .grid-blur-image {
+    position: relative;
+  }
+
+.grid-blur-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.payment-message {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #cab4b4;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  z-index: 1;
+  }
+  
+
+.lock-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.lock-overlay img {
+  width: 30px; /* adjust lock icon size */
+  height: 30px;
+  opacity: 0.8;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+footer .foot-btn {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding: 10px 15px;
+  border-radius: 10px;
+  background-color: blue;
+  color: white;
+  font-weight: bold;
+}
+
+
+
+
+
+
+
+
+  
+  
+  
+
+
+@media only screen and (max-width: 560px) {
+    header img {
+        width: 100%;
+        height: 120px;
+    }
+    .img-overlay {
+        background-color: blue;
+        opacity: 0.3;
+        box-shadow: 5px 5px 5px white;
+        width: 100%;
+        height: 120px;
+        position: absolute;
+    }
+
+    .post-img {
+        position: absolute;
+        top: 70px;
+        width: 110px;
+    }
+    
+    .post-img img {
+        border-radius: 50%;
+        height: 110px;
+    }
+
+}
+
+@media only screen and (min-width: 560px) {
+    header img {
+        width: 650px;
+        height: 170px;
+    }
+
+    .img-overlay {
+        background-color: blue;
+        opacity: 0.3;
+        box-shadow: 5px 5px 5px white;
+        width: 650px;
+        height: 170px;
+        position: absolute;
+    }
+
+    .post-img {
+        display: flex;
+        position: absolute;
+        top: 100px;
+        width: 150px;
+    }
+    
+    .post-img img {
+        border-radius: 50%;
+        height: 150px;
+    }
+
+    .content {
+        width: 650px;
+    }
+}
+

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My email</title>
+    <link rel="stylesheet" href="email.css">
+</head>
+<body>
+    <header>
+        <div class="logo">@Lunaclark</div>
+    </header>
+        <h1>Get in Touch.</h1>
+<p>Have a question or just want to say hi? Send us an email!</p>
+<section>
+<form>
+  <input class="emailme" type="text" name="name" placeholder="Your Name">
+  <input class="emailme" type="email" name="email" placeholder="Your Email">
+  <textarea class="emailme" name="message" placeholder="Your Message"></textarea>
+  <div id="errorMessaging" class="fourth-error-message">
+    <img class="fourth-error-message-icon" src="icons8-error-30.png" alt="error-icon">
+    <p><span>Insufficient credit balance</span></p>
+    <p><a href="gift.html">Buy a credit now. Get access</a></p>
+  </div>
+    <button onclick="errorMessage()"  class="emailme" type="button">Send Email</button>
+</form>
+</section>
+<footer>
+  <div class="foot">
+  <p>&copy; 2023 <span>Lunaclarkofficial.</span> All rights reserved.</p>
+</div>
+</footer>
+</body>
+<script src="app.js"></script>
+</html>

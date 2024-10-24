@@ -1,0 +1,164 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.yotipay  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.yotipay img {
+    width: 20px;
+    height: 20px;
+}
+
+.yotipay p {
+    color: rgb(177, 161, 161);
+    font-size: 0.9em;
+}
+
+.yotipay p span {
+    color: rgb(136, 122, 122);
+    font-weight: bold;
+}
+
+.bitcoin {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+
+}
+
+.bitcoin button {
+    background-color: rgb(233, 212, 212);
+    border: none;
+    border-radius: 10px;
+    padding: 15px 10px;
+    width: 280px;
+    font-size: 1.1em;
+}
+
+.bitcoin button span {
+    text-decoration: underline;
+}
+
+.pay {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pay button {
+    background-color: rgb(209, 236, 247);
+    width: 280px;
+    border: none;
+    line-height: 5px;
+    
+}
+
+
+
+#bitcoin-address {
+    cursor: pointer;
+    color:  rgb(44, 138, 175);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: rgb(44, 138, 175);
+    font-size: 0.9em;
+  }
+  
+
+.payme button {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.pay h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+}
+
+.copy p {
+    color: rgb(167, 152, 152);
+}
+
+
+
+ .save {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.save img {
+    width: 25px;
+}
+
+.save button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: rgb(168, 221, 241);
+}
+
+.logome {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logome img {
+    width: 64px;
+    height: 64px;
+}
+
+.logo {
+    background-image: url(icons8-bitcoin-50.png);
+    width: 50px;
+    height: 50px;
+    margin-left: 105px;
+    margin-top: 10px;
+}
+
+.pattern {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    text-align: center;
+    font-size: 0.9em;
+    color: rgb(128, 114, 114);
+    font-weight: bold;
+}
+
+.pattern p {
+    width: 200px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    margin-top: 30px;
+}
+
+footer button {
+    padding: 15px 30px;
+    border: none;
+    background-color: transparent;
+}
+
+footer span {
+    padding: 5px 40px;
+    color: red;
+    border-right: 1px solid rgb(73, 69, 69);
+}
